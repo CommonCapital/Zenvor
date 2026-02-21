@@ -1,0 +1,218 @@
+{
+  "nav": {
+    "utilityBar": "AI Automation Platform",
+    "email": "nursanomarov616@gmail.com",
+    "bookCall": "Book a Call",
+    "services": "Services",
+    "howItWorks": "How It Works",
+    "integrations": "Integrations",
+    "about": "About",
+    "contact": "Contact",
+    "bookDemo": "Book Demo"
+  },
+  "bookDemo": {
+    "nav": {
+      "utilityBar": "AI Automation Platform",
+      "email": "nursanomarov616@gmail.com",
+      "back": "← Back"
+    },
+    "hero": {
+      "eyebrow": "Schedule a Demo",
+      "title1": "See Zenvor in action.",
+      "titleItalic": "Built for your business.",
+      "sub": "In 30 minutes we'll walk you through a live demo tailored to your specific workflows, team size, and communication channels — no slides, no fluff.",
+      "stats": [
+        { "num": "30", "unit": "min", "label": "Live walkthrough" },
+        { "num": "1", "unit": "day", "label": "Response time" },
+        { "num": "9", "unit": "AI", "label": "Assistants shown" },
+        { "num": "0", "unit": "cost", "label": "No commitment" }
+      ]
+    },
+    "form": {
+      "section1": {
+        "step": "01",
+        "title": "Your contact details",
+        "fullName": "Full Name",
+        "email": "Work Email",
+        "phone": "Phone Number",
+        "phoneHint": "Optional — speeds up scheduling",
+        "jobTitle": "Job Title",
+        "jobTitleHint": "Optional",
+        "companyName": "Company Name",
+        "companyNameHint": "Optional"
+      },
+      "section2": {
+        "step": "02",
+        "title": "What are you interested in?",
+        "sub": "Optional — helps us tailor the demo to what matters most to you."
+      },
+      "section3": {
+        "step": "03",
+        "title": "Anything else?",
+        "message": "Message",
+        "messageHint": "Optional — your situation, team size, current tools, or specific questions",
+        "referral": "How did you hear about Zenvor?",
+        "referralHint": "Optional"
+      },
+      "submit": "Request Demo",
+      "submitting": "Sending your request…",
+      "noCommitment": "No commitment required. We'll reach out within 1 business day."
+    },
+    "sidebar": {
+      "nextTitle": "What happens next",
+      "steps": [
+        { "step": "1", "title": "We review your request", "body": "Within 1 business day, a Zenvor team member reads your submission." },
+        { "step": "2", "title": "We reach out", "body": "We contact you by email (or phone if provided) to confirm a time." },
+        { "step": "3", "title": "30-min live demo", "body": "We walk you through a session built around your use case." },
+        { "step": "4", "title": "Custom proposal", "body": "If it's a fit, we send a tailored scope and timeline within 48 hours." }
+      ],
+      "directTitle": "Prefer to write directly?",
+      "directEmail": "nursanomarov616@gmail.com",
+      "directSub": "We respond to every email within 1 business day.",
+      "previewTitle": "What you'll see",
+      "previewItems": [
+        "Live AI conversation across channels",
+        "CRM & database integration in action",
+        "Automated lead qualification flow",
+        "Scheduling assistant walkthrough",
+        "Your questions answered live"
+      ]
+    },
+    "success": {
+      "title": "Request Received",
+      "sub1": "A member of the Zenvor team will reach out within",
+      "sub2": "1 business day",
+      "sub3": "to confirm your demo slot.",
+      "refLabel": "REF:",
+      "backHome": "Back to Home",
+      "another": "Submit Another"
+    },
+    "footer": {
+      "copyright": "All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms"
+    },
+    "serviceOptions": [
+      { "value": "full_platform", "label": "Full Platform", "desc": "All 9 AI assistants" },
+      { "value": "communication_ai", "label": "Communication AI", "desc": "Omnichannel messaging" },
+      { "value": "sales_ai", "label": "Sales AI", "desc": "Lead qualification" },
+      { "value": "support_ai", "label": "Support AI", "desc": "Customer service" },
+      { "value": "knowledge_ai", "label": "Knowledge AI", "desc": "Document intelligence" },
+      { "value": "scheduling_ai", "label": "Scheduling AI", "desc": "Calendar automation" },
+      { "value": "data_ai", "label": "Data AI", "desc": "CRM & DB integration" },
+      { "value": "automation_ai", "label": "Automation AI", "desc": "Workflow automation" },
+      { "value": "internal_assistant_ai", "label": "Internal Assistant", "desc": "Team productivity" },
+      { "value": "decision_support_ai", "label": "Decision Support", "desc": "Analytics & insights" },
+      { "value": "not_sure", "label": "Not Sure Yet", "desc": "Help me find the right fit" }
+    ],
+    "referralOptions": [
+      "Search engine (Google, Bing…)",
+      "LinkedIn",
+      "Word of mouth / referral",
+      "Social media",
+      "Conference or event",
+      "Blog or article",
+      "Other"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Enterprise AI Automation Platform",
+    "tagline": "Not just a chatbot. A complete system of AI assistants working together for your business.",
+    "sub": "Zenvor deploys nine specialized AI assistants that handle your communication, sales pipeline, customer support, internal data, and workflows — automatically.",
+    "ctaStart": "Get Started",
+    "ctaSee": "See What We Build",
+    "ctaHow": "How It Works →",
+    "scroll": "Scroll"
+  },
+  "stats": [
+    { "value": "24/7", "label": "Always Active", "sub": "Zero downtime" },
+    { "value": "9", "label": "AI Assistants", "sub": "Specialized roles" },
+    { "value": "3×", "label": "Faster Response", "sub": "Avg. improvement" },
+    { "value": "60%", "label": "Cost Reduction", "sub": "In ops overhead" },
+    { "value": "∞", "label": "Scalability", "sub": "Grows with you" }
+  ],
+  "intro": {
+    "eyebrow": "What Zenvor Is",
+    "heading1": "Your company,",
+    "headingItalic": "run by intelligence.",
+    "p1": "We build AI assistants that handle communication, sales, support, scheduling, and data — so your team can focus on what actually grows the business.",
+    "p2": "Each assistant has a defined role, a specific skill set, and a connection to your existing tools. They don't replace your team — they remove everything that shouldn't require a human.",
+    "cta": "See all 9 assistants →",
+    "cells": [
+      { "num": "01", "title": "Talks to customers", "body": "Across every channel, 24 hours a day, without missing a message." },
+      { "num": "02", "title": "Qualifies leads", "body": "Identifies serious buyers and hands them ready to close." },
+      { "num": "03", "title": "Knows your business", "body": "Reads your docs and policies. Gives real answers, not generic ones." },
+      { "num": "04", "title": "Schedules meetings", "body": "Books, confirms, and reminds automatically. No coordination needed." },
+      { "num": "05", "title": "Connects your data", "body": "Live sync with your CRM, databases, and operational tools." },
+      { "num": "06", "title": "Automates workflows", "body": "Moves data, triggers actions, updates records — no manual work." },
+      { "num": "07", "title": "Supports your team", "body": "Answers employee questions and guides internal processes." },
+      { "num": "08", "title": "Provides insights", "body": "Surfaces trends, opportunities, and decision-ready data." }
+    ]
+  },
+  "services": {
+    "eyebrow": "The System",
+    "heading1": "Nine AI assistants.",
+    "headingItalic": "One unified platform.",
+    "sub": "Each AI has a specific role. Together, they run the parts of your business that shouldn't require human attention.",
+    "items": [
+      { "num": "01", "name": "Communication AI", "tag": "Always On", "desc": "Talks to your customers across every channel simultaneously. Answers questions, explains your services, collects information, and guides people step by step — without any human involvement.", "bullets": ["WhatsApp & Telegram", "Instagram & LinkedIn DMs", "Website live chat", "Facebook Messenger", "Email integration", "24/7 without gaps"] },
+      { "num": "02", "name": "Sales AI", "tag": "Revenue", "desc": "Turns conversations into real opportunities. Identifies serious buyers, asks the right questions, and books meetings — so your team only talks to people ready to buy.", "bullets": ["Lead qualification", "Contact collection", "Meeting booking", "Product suggestions", "Follow-up triggers"] },
+      { "num": "03", "name": "Support AI", "tag": "Retention", "desc": "Handles your existing customers instantly. Answers common questions, explains processes, and provides assistance — reducing your support team's workload significantly.", "bullets": ["Instant answers", "Process guidance", "Troubleshooting", "Escalation routing", "Customer history"] },
+      { "num": "04", "name": "Knowledge AI", "tag": "Intelligence", "desc": "Reads and understands your internal documents, policies, and product information. Gives accurate answers based on your real business data — not generic responses.", "bullets": ["Company docs & FAQs", "Contracts & policies", "Product catalogs", "PDF & report parsing", "Semantic search"] },
+      { "num": "05", "name": "Scheduling AI", "tag": "Efficiency", "desc": "Manages meetings and appointments from start to finish. Checks availability, books slots, sends confirmations, and follows up with reminders. No manual coordination.", "bullets": ["Google Calendar sync", "Automatic booking", "Confirmations", "Reminders", "Team availability"] },
+      { "num": "06", "name": "Data AI", "tag": "Integration", "desc": "Connects directly to your databases and CRM systems. Retrieves and updates customer records, product data, and operational information automatically and in real time.", "bullets": ["SQL databases", "CRM sync", "Live retrieval", "Record updates", "Data pipelines"] },
+      { "num": "07", "name": "Automation AI", "tag": "Workflow", "desc": "Connects different parts of your business and runs workflows automatically. Moves data between systems, triggers actions, sends notifications — no human needed.", "bullets": ["Cross-platform flows", "Trigger-based actions", "Notifications", "Make & Zapier", "API webhooks"] },
+      { "num": "08", "name": "Internal Assistant AI", "tag": "Team", "desc": "A smart assistant for your team. Answers employee questions, helps find company information, and provides operational support.", "bullets": ["Employee Q&A", "Process guidance", "Operational support", "Knowledge retrieval"] },
+      { "num": "09", "name": "Decision Support AI", "tag": "Insight", "desc": "Shows you what's happening in your business. Analyzes conversations, identifies trends, highlights opportunities — so you always know what to act on.", "bullets": ["Conversation analytics", "Trend identification", "Opportunity highlights", "Performance reports"] }
+    ]
+  },
+  "how": {
+    "eyebrow": "How It Works",
+    "heading1": "Simple to start.",
+    "headingItalic": "Powerful at scale.",
+    "steps": [
+      { "num": "01", "title": "We learn your business", "body": "We start by mapping your communication channels, team structure, customer journey, and existing tools. Every system we build is specific to how your company actually operates — not a generic template." },
+      { "num": "02", "title": "We build your AI system", "body": "We design and deploy the right combination of AI assistants for your needs. We connect them to your platforms, databases, CRM, and calendar — and train them on your real business data, documents, and processes." },
+      { "num": "03", "title": "Your team gets their time back", "body": "From day one, the system handles repetitive communication, routing, scheduling, and data tasks automatically. Your team focuses on decisions, relationships, and growth — not inbox management." },
+      { "num": "04", "title": "It scales as you grow", "body": "Add new channels, expand to new markets, integrate new tools. The system evolves with your company — no rebuilding from scratch, no new hires required for operational tasks." }
+    ]
+  },
+  "about": {
+    "eyebrow": "Why Zenvor",
+    "heading1": "Built for businesses that",
+    "headingItalic": "can't afford to move slowly.",
+    "p1": "Most companies waste thousands of hours a year on work that should be automated. Answering the same questions. Moving data between systems. Manually scheduling meetings. Chasing unqualified leads.",
+    "p2": "Zenvor eliminates that overhead entirely — and replaces it with intelligent systems that work continuously, never forget, and get smarter over time.",
+    "pillars": [
+      { "label": "Bespoke, not templated", "body": "Every system is built for your specific company, data, and processes." },
+      { "label": "Connects to your stack", "body": "CRM, databases, calendar, messaging — we integrate with what you already use." },
+      { "label": "Immediate results", "body": "From day one, the system handles operational tasks automatically." },
+      { "label": "Grows with you", "body": "Add new capabilities, channels, and markets without starting over." },
+      { "label": "Secure by design", "body": "Encrypted data transfer, access controls, and compliance-ready architecture." }
+    ]
+  },
+  "integrations": {
+    "eyebrow": "Connects to everything you already use"
+  },
+  "cta": {
+    "eyebrow": "Get Started",
+    "heading1": "Your team focuses on",
+    "headingItalic": "important work.",
+    "heading2": "The AI handles the rest.",
+    "sub": "Book a 30-minute call. We'll show you exactly what this looks like for your business.",
+    "ctaDemo": "Book a Demo",
+    "ctaEmail": "Send a Message"
+  },
+  "footer": {
+    "desc": "Enterprise AI automation platform. Nine specialized AI assistants working as one unified system for your business.",
+    "tagline": "Built with precision. Deployed with purpose.",
+    "copyright": "All rights reserved.",
+    "columns": {
+      "Services": ["Communication AI", "Sales AI", "Support AI", "Knowledge AI", "Scheduling AI", "Data AI", "Automation AI"],
+      "Company": ["About Zenvor", "How It Works", "Case Studies", "Pricing", "Blog"],
+      "Integrations": ["CRM Systems", "Messaging Platforms", "Calendars", "Databases", "Automation Tools"],
+      "Legal": ["Privacy Policy", "Terms of Service", "Data Processing", "Security"]
+    },
+    "legal": ["Privacy Policy", "Terms of Service", "Cookies"]
+  }
+}
