@@ -442,9 +442,7 @@ export default function ZenvorPage({
           {dict.hero.tagline}
         </p>
 
-        <p style={{ position: "relative", zIndex: 1, fontSize: 15, fontWeight: 300, color: navy, opacity: 0.4, maxWidth: 440, lineHeight: 1.65, marginBottom: 52, animation: "fadeUp 0.8s 0.25s ease both" }}>
-          {dict.hero.sub}
-        </p>
+    
 
         {/* Hero actions */}
         <div className="hero-actions" style={{ position: "relative", zIndex: 1, display: "flex", gap: 14, alignItems: "center", flexWrap: "wrap", justifyContent: "center", animation: "fadeUp 0.8s 0.32s ease both" }}>
@@ -466,7 +464,7 @@ export default function ZenvorPage({
           </a>
           <a
             href="#how"
-            style={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.08em", color: "white", opacity: 0.4, textDecoration: "underline", textUnderlineOffset: 4, transition: "opacity 0.2s" }}
+            style={{  fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", color: "white", opacity: 2, textDecoration: "underline", textUnderlineOffset: 4, transition: "opacity 0.2s" }}
             onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.opacity = "0.9")}
             onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.opacity = "0.4")}
           >
