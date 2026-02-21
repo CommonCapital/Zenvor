@@ -1,4 +1,4 @@
-import { google } from "@ai-sdk/google";  // ← swap this
+import { openai } from "@ai-sdk/openai";  // ← swap this
 import { streamText } from "ai";
 
 export const maxDuration = 30;
@@ -95,7 +95,7 @@ PRICING
 
 Zenvor does not publish fixed pricing. Every engagement is scoped based on the number of assistants deployed, the complexity of integrations, team size, and the volume of automation required. Pricing is discussed after the discovery call once we understand the client's specific situation.
 
-Budget ranges clients have worked with: $500/mo to $5,000+/mo depending on scope.
+Budget ranges clients have worked with: $100/mo to $5,000+/mo depending on scope.
 
 ---
 
@@ -119,10 +119,11 @@ Get Started: /dashboard
 Book a Demo: /book-demo
 `;
     const result = await streamText({
-      model: google("gemini-2.0-flash"),  // ← fast + free tier
-      messages: safeMessages,
-      system: systemPrompt,
-    });
+  model: openai("gpt-5-mini"),
+  messages: safeMessages,
+  system: systemPrompt,
+  
+})
 
     console.log("✅ [chat/route] Streaming started");
     return result.toUIMessageStreamResponse();
