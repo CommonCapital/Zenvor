@@ -111,7 +111,6 @@ function LangSwitcher({ lang }: { lang: Locale }) {
   const white = "#FFFFFF";
 
   const switchTo = (target: Locale) => {
-    // Replace the current locale segment in the pathname
     const segments = pathname.split("/");
     segments[1] = target;
     router.push(segments.join("/"));
@@ -271,8 +270,8 @@ export default function ZenvorPage({
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,300&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'DM Sans', sans-serif; background: #FFFFFF; color: #0B1F3B; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+        html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100vw; }
+        body { font-family: 'DM Sans', sans-serif; background: #FFFFFF; color: #0B1F3B; -webkit-font-smoothing: antialiased; overflow-x: hidden; max-width: 100vw; width: 100%; }
         ::selection { background: #0B1F3B; color: #FFFFFF; }
         @media (max-width: 768px) {
           .services-grid { grid-template-columns: 1fr !important; }
@@ -441,8 +440,6 @@ export default function ZenvorPage({
         <p style={{ position: "relative", zIndex: 1, fontFamily: "'EB Garamond', serif", fontSize: "clamp(20px, 2.4vw, 28px)", fontWeight: 400, fontStyle: "italic", color: navy, opacity: 0.55, maxWidth: 580, lineHeight: 1.55, marginBottom: 20, animation: "fadeUp 0.8s 0.2s ease both" }}>
           {dict.hero.tagline}
         </p>
-
-    
 
         {/* Hero actions */}
         <div className="hero-actions" style={{ position: "relative", zIndex: 1, display: "flex", gap: 14, alignItems: "center", flexWrap: "wrap", justifyContent: "center", animation: "fadeUp 0.8s 0.32s ease both" }}>
@@ -642,7 +639,7 @@ export default function ZenvorPage({
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url("/")' }}
+          style={{ backgroundImage: 'url("/night.jpeg")' }}
         />
         <div style={{ position: "absolute", inset: 0, background: "rgba(255,255,255,0.82)", pointerEvents: "none" }} />
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 70% 90% at 50% 110%, rgba(11,31,59,0.07) 0%, transparent 65%)", pointerEvents: "none" }} />
@@ -677,7 +674,6 @@ export default function ZenvorPage({
       </section>
 
       {/* ── FLOATING AI CHAT ── */}
-      {/* Toggle button */}
       <Button
         onClick={() => setIsChatOpen(!isChatOpen)}
         className={cn(
