@@ -414,7 +414,7 @@ export default function ZenvorPage({
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url("/background.jpeg")' }}
+          style={{ backgroundImage: 'url("/background.jpg")' }}
         />
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 90% 70% at 50% -5%, rgba(11,31,59,0.06) 0%, transparent 65%)", pointerEvents: "none" }} />
         <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(rgba(11,31,59,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(11,31,59,0.04) 1px, transparent 1px)", backgroundSize: "72px 72px", pointerEvents: "none" }} />
@@ -442,7 +442,7 @@ export default function ZenvorPage({
           {dict.hero.tagline}
         </p>
 
-        <p style={{ position: "relative", zIndex: 1, fontSize: 15, fontWeight: 300, color: "white", opacity: 0.4, maxWidth: 440, lineHeight: 1.65, marginBottom: 52, animation: "fadeUp 0.8s 0.25s ease both" }}>
+        <p style={{ position: "relative", zIndex: 1, fontSize: 15, fontWeight: 300, color: navy, opacity: 0.4, maxWidth: 440, lineHeight: 1.65, marginBottom: 52, animation: "fadeUp 0.8s 0.25s ease both" }}>
           {dict.hero.sub}
         </p>
 
@@ -644,7 +644,7 @@ export default function ZenvorPage({
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url("/background.jpeg")' }}
+          style={{ backgroundImage: 'url("/")' }}
         />
         <div style={{ position: "absolute", inset: 0, background: "rgba(255,255,255,0.82)", pointerEvents: "none" }} />
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 70% 90% at 50% 110%, rgba(11,31,59,0.07) 0%, transparent 65%)", pointerEvents: "none" }} />
