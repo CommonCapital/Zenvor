@@ -9,12 +9,10 @@ export default async function LangLayout({
   children,
 }: {
   children: React.ReactNode;
-  params: Promise<{ lang: Locale }>;
+  // params is intentionally NOT destructured — Next.js requires
+  // params.lang to be typed as `string`, not `"en" | "ru"`.
+  // Narrowing happens inside page.tsx via hasLocale().
+  params: Promise<{ lang: string }>;
 }) {
-  // Do NOT wrap in <html><body> here.
-  // Your root app/layout.tsx already renders those.
-  // Nesting html/body tags breaks Tailwind's `fixed` and `absolute`
-  // positioning — which is why the background image disappeared
-  // and AIChat lost its fixed positioning.
   return <>{children}</>;
 }
