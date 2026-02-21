@@ -707,81 +707,122 @@ export default function ZenvorPage({
       />
 
       {/* ── FOOTER ── */}
-      <footer style={{ background: navy, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-        <div className="section-pad" style={{ padding: "72px 64px 48px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr 1fr", gap: 48, maxWidth: 1200, margin: "0 auto" }}>
-            {/* Brand column */}
-            <div>
-              <a href="#" style={{ textDecoration: "none", display: "inline-block", marginBottom: 24 }}>
-                <span style={{ display: "inline-flex", alignItems: "baseline", fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 28, letterSpacing: "-0.022em", lineHeight: 1 }}>
-                  <span style={{ color: white }}>Zen</span>
-                  <span style={{ WebkitTextFillColor: "transparent", color: "transparent", WebkitTextStrokeColor: white, WebkitTextStrokeWidth: "1.4px" }}>vor</span>
-                </span>
-              </a>
-              <p style={{ fontSize: 13, fontWeight: 300, lineHeight: 1.75, color: "rgba(255,255,255,0.4)", maxWidth: 260, marginBottom: 28 }}>
-                {dict.footer.desc}
-              </p>
-              <a href={`mailto:${dict.nav.email}`} style={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.06em", color: "rgba(255,255,255,0.5)", textDecoration: "none", display: "block", marginBottom: 8, transition: "color 0.2s" }}
-                onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = white)}
-                onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.5)")}
-              >
-                {dict.nav.email}
-              </a>
-              <a href="tel:+77085690878" style={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.06em", color: "rgba(255,255,255,0.5)", textDecoration: "none", marginBottom: 8, display: "block", transition: "color 0.2s" }}
-                onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = white)}
-                onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.5)")}
-              >
-                +7 (708) 569 08 78
-              </a>
-              <a href="tel:+77759156613" style={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.06em", color: "rgba(255,255,255,0.5)", textDecoration: "none", display: "block", transition: "color 0.2s", marginBottom: 8 }}
-                onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = white)}
-                onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.5)")}
-              >
-                +7 (775) 915 66 13
-              </a>
-            </div>
+    {/* ── FOOTER ── */}
+<footer style={{ background: navy, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+  {/* Responsive Styles */}
+  <style>{`
+    .footer-section { padding: 72px 64px 48px; }
+    .footer-grid { 
+      display: grid; 
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr; 
+      gap: 48px; 
+      max-width: 1200px; 
+      margin: 0 auto; 
+    }
+    .footer-brand-col { grid-column: span 1; }
+    .footer-bottom-wrap { 
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      flex-wrap: wrap; 
+      gap: 16px; 
+    }
 
-            {/* Link columns */}
-            {Object.entries(dict.footer.columns).map(([heading, links]) => (
-              <div key={heading}>
-                <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(255,255,255,0.28)", marginBottom: 20 }}>{heading}</p>
-                <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 12 }}>
-                  {(links as string[]).map((link) => (
-                    <li key={link}>
-                      <a href="#" style={{ fontSize: 13, fontWeight: 400, color: "rgba(255,255,255,0.45)", textDecoration: "none", transition: "color 0.2s", display: "block" }}
-                        onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = white)}
-                        onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.45)")}
-                      >
-                        {link}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      .footer-section { padding: 48px 24px 32px; }
+      .footer-grid { 
+        grid-template-columns: 1fr 1fr; /* Grid-2 */
+        gap: 32px; 
+      }
+      .footer-brand-col { 
+        grid-column: span 2; /* Make brand full width on mobile */
+        margin-bottom: 16px;
+      }
+      .footer-bottom-wrap { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 24px;
+      }
+    }
+  `}</style>
 
-        {/* Footer bottom bar */}
-        <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", padding: "20px 64px" }} className="section-pad">
-          <div className="footer-bottom" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", maxWidth: 1200, margin: "0 auto", flexWrap: "wrap", gap: 16 }}>
-            <p style={{ fontSize: 11, color: "rgba(255,255,255,0.25)", letterSpacing: "0.04em" }}>
-              © {new Date().getFullYear()} Zenvor. {dict.footer.copyright}
-            </p>
-            <div style={{ display: "flex", gap: 28, flexWrap: "wrap" }}>
-              {(dict.footer.legal as string[]).map((l) => (
-                <a key={l} href="#" style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.25)", textDecoration: "none", transition: "color 0.2s" }}
-                  onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.7)")}
-                  onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.25)")}
+  <div className="section-pad footer-section">
+    <div className="footer-grid">
+      {/* Brand column */}
+      <div className="footer-brand-col">
+        <a href="#" style={{ textDecoration: "none", display: "inline-block", marginBottom: 24 }}>
+          <span style={{ display: "inline-flex", alignItems: "baseline", fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 28, letterSpacing: "-0.022em", lineHeight: 1 }}>
+            <span style={{ color: white }}>Zen</span>
+            <span style={{ WebkitTextFillColor: "transparent", color: "transparent", WebkitTextStrokeColor: white, WebkitTextStrokeWidth: "1.4px" }}>vor</span>
+          </span>
+        </a>
+        <p style={{ fontSize: 13, fontWeight: 300, lineHeight: 1.75, color: "rgba(255,255,255,0.4)", maxWidth: 260, marginBottom: 28 }}>
+          {dict.footer.desc}
+        </p>
+        <a href={`mailto:${dict.nav.email}`} style={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.06em", color: "rgba(255,255,255,0.5)", textDecoration: "none", display: "block", marginBottom: 8, transition: "color 0.2s" }}
+          onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = white)}
+          onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.5)")}
+        >
+          {dict.nav.email}
+        </a>
+        <a href="tel:+77085690878" style={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.06em", color: "rgba(255,255,255,0.5)", textDecoration: "none", marginBottom: 8, display: "block", transition: "color 0.2s" }}
+          onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = white)}
+          onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.5)")}
+        >
+          +7 (708) 569 08 78
+        </a>
+        <a href="tel:+77759156613" style={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.06em", color: "rgba(255,255,255,0.5)", textDecoration: "none", display: "block", transition: "color 0.2s", marginBottom: 8 }}
+          onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = white)}
+          onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.5)")}
+        >
+          +7 (775) 915 66 13
+        </a>
+      </div>
+
+      {/* Link columns */}
+      {Object.entries(dict.footer.columns).map(([heading, links]) => (
+        <div key={heading}>
+          <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(255,255,255,0.28)", marginBottom: 20 }}>{heading}</p>
+          <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 12 }}>
+            {(links as string[]).map((link) => (
+              <li key={link}>
+                <a href="#" style={{ fontSize: 13, fontWeight: 400, color: "rgba(255,255,255,0.45)", textDecoration: "none", transition: "color 0.2s", display: "block" }}
+                  onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = white)}
+                  onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.45)")}
                 >
-                  {l}
+                  {link}
                 </a>
-              ))}
-            </div>
-            <p style={{ fontSize: 11, color: "rgba(255,255,255,0.2)", letterSpacing: "0.04em" }}>{dict.footer.tagline}</p>
-          </div>
+              </li>
+            ))}
+          </ul>
         </div>
-      </footer>
+      ))}
+    </div>
+  </div>
+
+  {/* Footer bottom bar */}
+  <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", padding: "20px 64px" }} className="section-pad footer-section">
+    <div className="footer-bottom-wrap">
+      <p style={{ fontSize: 11, color: "rgba(255,255,255,0.25)", letterSpacing: "0.04em", margin: 0 }}>
+        © {new Date().getFullYear()} Zenvor. {dict.footer.copyright}
+      </p>
+      <div style={{ display: "flex", gap: 28, flexWrap: "wrap", justifyContent: "center" }}>
+        {(dict.footer.legal as string[]).map((l) => (
+          <a key={l} href="#" style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.25)", textDecoration: "none", transition: "color 0.2s" }}
+            onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.7)")}
+            onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.25)")}
+          >
+            {l}
+          </a>
+        ))}
+      </div>
+      <p style={{ fontSize: 11, color: "rgba(255,255,255,0.2)", letterSpacing: "0.04em", margin: 0 }}>{dict.footer.tagline}</p>
+    </div>
+  </div>
+</footer>
     </>
   );
 }
